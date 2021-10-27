@@ -30,11 +30,11 @@ $(document).ready(function() {
   // Adds user response from prompt to respective divs
   $(".spyWhite").one("mouseover", function() {
     $(".standardResponse").append(function() {
-      return response;
+      return "> " + response;
     });
   $(".spyBlack").one("mouseover", function() {
     $(".editedResponse").append(function() {
-      return cipher(response);
+      return "> " + cipher(response);
     });
   });
   // Shows and hides divs on click

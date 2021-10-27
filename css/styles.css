@@ -1,13 +1,22 @@
-h1, h5 {
+/* Global changes */
+h5 {
   text-align: center;
+}
+hr {
+  border-top: 1px solid black;
 }
 img {
   width: 200px;
   height: 300px;
   display: block;
 }
+img:hover {
+  cursor: pointer;
+}
+/* (un)encrypted text divs */
 .unencryptedText, .encryptedText {
   display: none;
   color: green;
   background-color: black;
+  padding: 1em;
 }
