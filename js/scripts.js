@@ -27,11 +27,11 @@ function cipher(response) {
 }
 const response = prompt("Write a sentence:");
 $(document).ready(function() {
-  $(".spywhite").one("click", function() {
+  $(".spywhite").one("mouseover", function() {
     $(".standardResponse").append(function() {
-      return response + " ";
+      return response;
     });
-  $(".spyblack").one("click", function() {
+  $(".spyblack").one("mouseover", function() {
     $(".editedResponse").append(function() {
       return cipher(response);
     });
