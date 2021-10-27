@@ -22,8 +22,7 @@ function spaghetti(response) {
 function reverse(response) {
   return response.split("").reverse().join("");
 }
-const response = prompt("Write a sentence:");
-//alert(reverse(spaghetti(response)));
+//const response = prompt("Write a sentence:");
 $(document).ready(function() {
   $(".spywhite").click(function() {
     alert(response);
