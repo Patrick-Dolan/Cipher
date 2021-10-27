@@ -16,7 +16,6 @@ function concatIt(response){
 function spaghetti(response) {
   const number = Math.floor((response.length - 1) / 2);
   const letter = response.charAt(number);
-  //return console.log(number);
   return letter + concatIt(response);
 }
 function reverse(response) {
@@ -25,6 +24,7 @@ function reverse(response) {
 function cipher(response) {
   return reverse(spaghetti(response));
 }
+// Prompt to get response from user upon opening the page
 const response = prompt("Write a sentence:");
 $(document).ready(function() {
   // Adds user response from prompt to respective divs
