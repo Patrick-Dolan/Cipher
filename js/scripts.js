@@ -28,7 +28,6 @@ function cipher(response) {
 const response = prompt("Write a sentence:");
 $(document).ready(function() {
   $(".spywhite").click(function() {
-    //alert(response);
     $(".standardResponse").append(function() {
       return response + " ";
     });
