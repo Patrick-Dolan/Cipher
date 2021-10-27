@@ -13,6 +13,14 @@ img {
 img:hover {
   cursor: pointer;
 }
+/* Jumbotron */
+.jumbotron {
+  padding-bottom: 1rem;
+}
+/* Cards */
+.card {
+  margin-bottom: 1em;
+}
 /* (un)encrypted text divs */
 .unencryptedText, .encryptedText {
   display: none;
