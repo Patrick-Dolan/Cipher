@@ -6,3 +6,8 @@ img {
   height: 300px;
   display: block;
 }
+.unencryptedText, .encryptedText {
+  display: none;
+  color: green;
+  background-color: black;
+}

@@ -27,14 +27,22 @@ function cipher(response) {
 }
 const response = prompt("Write a sentence:");
 $(document).ready(function() {
-  $(".spywhite").click(function() {
+  $(".spywhite").one("click", function() {
     $(".standardResponse").append(function() {
       return response + " ";
     });
-  });
-  $(".spyblack").click(function() {
+  $(".spyblack").one("click", function() {
     $(".editedResponse").append(function() {
       return cipher(response);
     });
+  });
+  $(".spywhite").click(function() {
+    $(".unencryptedText").slideDown();
+    $(".encryptedText").slideUp();
+    });
+  });
+  $(".spyblack").click(function() {
+    $(".unencryptedText").slideUp();
+    $(".encryptedText").slideDown();
   });
 });
