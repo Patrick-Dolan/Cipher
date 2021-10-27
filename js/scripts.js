@@ -23,6 +23,12 @@ function reverse(response) {
   return response.split("").reverse().join("");
 }
 const response = prompt("Write a sentence:");
-
-alert(reverse(spaghetti(response)));
-
+//alert(reverse(spaghetti(response)));
+$(document).ready(function() {
+  $(".spywhite").click(function() {
+    alert(response);
+  });
+  $(".spyblack").click(function() {
+    alert(reverse(spaghetti(response)));
+  });
+});
