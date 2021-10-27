@@ -2,7 +2,7 @@
 
 #### By _**Patrick Dolan, Ryan Rendon and Anastasia Han**_
 
-#### _A silly little site that takes in a sentence from the user and ouputs that sentence and a version that is encrpted._
+#### _A silly little site that takes in a sentence from the user and ouputs that sentence when you click on one image and a version that is encrypted when you click the other image._
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_When the webpage is launched you will be given a prompt to type a sentence. If you want to see that sentence without any changes you click on the spy wearing white. To see the sentence after its been encrypted click on the spy wearing black. At any time if the sentences are showing you can dismiss them by clicking on the corresponding spy. You will never see both sentences at the same time because when you click on one it will hide the other._
+_When the webpage is launched you will be given a prompt to type a sentence. If you want to see that sentence without any changes you click on the spy wearing blue. To see the sentence after its been encrypted click on the spy wearing red. At any time if the sentences are showing you can dismiss them by clicking on the corresponding spy. You will never see both sentences at the same time because when you click on one it will hide the other._
 
 ## Setup/Installation Requirements
 
