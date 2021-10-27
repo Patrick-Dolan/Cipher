@@ -27,21 +27,23 @@ function cipher(response) {
 }
 const response = prompt("Write a sentence:");
 $(document).ready(function() {
-  $(".spywhite").one("mouseover", function() {
+  // Adds user response from prompt to respective divs
+  $(".spyWhite").one("mouseover", function() {
     $(".standardResponse").append(function() {
       return response;
     });
-  $(".spyblack").one("mouseover", function() {
+  $(".spyBlack").one("mouseover", function() {
     $(".editedResponse").append(function() {
       return cipher(response);
     });
   });
-  $(".spywhite").click(function() {
+  // Shows and hides divs on click
+  $(".spyWhite").click(function() {
     $(".unencryptedText").slideDown();
     $(".encryptedText").slideUp();
     });
   });
-  $(".spyblack").click(function() {
+  $(".spyBlack").click(function() {
     $(".unencryptedText").slideUp();
     $(".encryptedText").slideDown();
   });
