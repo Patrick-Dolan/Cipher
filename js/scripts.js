@@ -22,12 +22,21 @@ function spaghetti(response) {
 function reverse(response) {
   return response.split("").reverse().join("");
 }
-//const response = prompt("Write a sentence:");
+function cipher(response) {
+  return reverse(spaghetti(response));
+}
+const response = prompt("Write a sentence:");
 $(document).ready(function() {
   $(".spywhite").click(function() {
-    alert(response);
+    //alert(response);
+    $(".standardResponse").append(function() {
+      return response + " ";
+    });
   });
   $(".spyblack").click(function() {
-    alert(reverse(spaghetti(response)));
+    $(".editedResponse").append(function() {
+      return cipher(response);
+    });
   });
+
 });
