@@ -32,6 +32,7 @@ $(document).ready(function() {
     $(".standardResponse").append(function() {
       return "> " + response;
     });
+  });
   $(".spyBlack").one("mouseover", function() {
     $(".editedResponse").append(function() {
       return "> " + cipher(response);
@@ -39,12 +40,11 @@ $(document).ready(function() {
   });
   // Shows and hides divs on click
   $(".spyWhite").click(function() {
-    $(".unencryptedText").slideDown();
+    $(".unencryptedText").slideToggle();
     $(".encryptedText").slideUp();
-    });
   });
   $(".spyBlack").click(function() {
     $(".unencryptedText").slideUp();
-    $(".encryptedText").slideDown();
+    $(".encryptedText").slideToggle();
   });
 });
