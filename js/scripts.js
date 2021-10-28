@@ -47,4 +47,15 @@ $(document).ready(function() {
     $(".unencryptedText").slideUp();
     $(".encryptedText").slideToggle();
   });
+  // Light mode logic
+  $("button.lightModeButton").click(function() {
+    $("div").removeClass("bg-dark text-white");
+  });
+  // Dark mode Logic
+  $("button.darkModeButton").click(function() {
+    $("div.card").addClass("bg-dark text-white");
+  });
+  $("button.darkModeButton").click(function() {
+    $("div.jumbotron").addClass("bg-dark text-white");
+  });
 });
